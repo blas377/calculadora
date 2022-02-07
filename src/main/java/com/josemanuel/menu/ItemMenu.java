@@ -3,6 +3,10 @@ package com.josemanuel.menu;
 import java.util.Scanner;
 import java.util.function.Function;
 
+/**
+ * Crea los items de un menú según si es un submenú o una función y sus respectivos
+ * setters y getters para obtener la información de la clase que es privada.
+ */
 public class ItemMenu {
 
     private String mensajeMenu;

@@ -4,6 +4,10 @@ import java.math.BigDecimal;
 import java.util.Scanner;
 import java.util.function.Function;
 
+/**
+ * Crea una función que ejecuta una suma entre dos valores obtenidos por parámetros
+ * e imprime la respuesta por consola, devuelve null.
+ */
 public class FuncionSuma implements Function<Scanner, Void>{
 
     @Override

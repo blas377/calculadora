@@ -4,6 +4,10 @@ import java.math.BigDecimal;
 import java.util.Scanner;
 import java.util.function.Function;
 
+/**
+ * Crea una función que obtiene los valores por parámetros y se imprime el 
+ * resultado por consola, devuelve null.
+ */
 public class FuncionArea implements Function<Scanner, Void>{
 
     @Override

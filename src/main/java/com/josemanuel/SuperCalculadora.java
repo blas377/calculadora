@@ -15,6 +15,10 @@ import com.josemanuel.menu.Menu;
 public class SuperCalculadora 
 {
 
+    /**
+     * Crea la clase principal y el scanner para recoger los datos por consola e
+     * inicializa los menús a través del método inicializaMenus()
+     */
     public SuperCalculadora() {
         sc = new Scanner(System.in);
         this.inicializaMenus();
@@ -23,6 +27,13 @@ public class SuperCalculadora
     private Scanner sc;
     private Menu menuPrincipal;
 
+    /**
+     * Es el arranque del programa, main que inicializa un objeto de la clase SuperCalculadora
+     * y posteriormente intenta (try) ejecutar el método de obtener el menu principal anidada con
+     * el método bucle que identifica la salida.
+     * Si no lo consigue obtiene (catch) una salida que imprime "FIN SUPERCALCULADORA" y cierra la aplicación.
+     * @param args
+     */
     public static void main( String[] args ) 
     {
         SuperCalculadora superCalculadora = new SuperCalculadora();
@@ -36,6 +47,9 @@ public class SuperCalculadora
 
     }
  
+    /**
+     * Clase privada que inicializa los menús de forma anidada con sus respectivas opciones
+     */
     private void inicializaMenus() {
         
         String introOpc = "Introduzca opción:";
@@ -65,10 +79,17 @@ public class SuperCalculadora
 
     }
 
+    /**
+     * @return get que devuelve el menu ya inicializado de la clase Menu
+     */
     public Menu getMenuPrincipal() {
         return menuPrincipal;
     }
 
+    /**
+     * 
+     * @return get del Scanner
+     */
     public Scanner getSc() {
         return sc;
     }

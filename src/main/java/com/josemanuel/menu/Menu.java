@@ -4,6 +4,10 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.function.Function;
 
+/**
+ * Esta clase tiene un constructor para crear el menú por parámetros, un método que renderiza
+ * los mensajes del menú y un método que identifica si la respuesta es un submenú o una función
+ */
 public class Menu {
 
     private Scanner sc;
@@ -12,6 +16,13 @@ public class Menu {
     private Map<String, ItemMenu> mapItemMenu;
     
 
+    /**
+     * Constructor de un menú a través de los parámetros
+     * @param titulo
+     * @param input
+     * @param mapItemMenu
+     * @param sc
+     */
     public Menu(String titulo, String input, Map<String, ItemMenu> mapItemMenu, Scanner sc) {
 
         this.sc = sc;
@@ -21,6 +32,9 @@ public class Menu {
 
     }
 
+    /**
+     * Renderiza los mensajes del menú
+     */
     public void renderiza() {
 
         System.out.println(titulo);
@@ -33,6 +47,10 @@ public class Menu {
 
     }
 
+    /**
+     * Identifica si es un submenú o una función que se tiene que ejecutar y da respuesta
+     * @throws ExitMenuException
+     */
     public void bucle() throws ExitMenuException {
 
         
@@ -62,9 +80,5 @@ public class Menu {
         } while(true);
 
     }
-
-
-
-    
     
 }

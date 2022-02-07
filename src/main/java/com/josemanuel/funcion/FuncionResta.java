@@ -5,7 +5,10 @@ import java.util.Scanner;
 import java.util.function.Function;
 
 
-
+/**
+ * Crea una función que recibe dos valores por parámetro de la consola que se restan
+ * y se imprime por pantalla la respuesta, devuelve null la salida.
+ */
 public class FuncionResta implements Function<Scanner, Void>{
 
     @Override
